@@ -170,23 +170,6 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity; }
-  @media (max-width: 480px) {
-    video {
-      display: none; } }
-
-.background {
-  display: none; }
-  @media (max-width: 480px) {
-    .background {
-      min-width: 100%;
-      min-height: 100%;
-      display: block;
-      position: fixed;
-      background-image: url("../images/poster.png");
-      background-repeat: no-repeat;
-      background-position: 50% 10%;
-      background-size: cover;
-      z-index: -100; } }
 
 img {
   max-width: 100%;
@@ -280,8 +263,7 @@ img {
       padding-top: 35%; } }
   @media (max-width: 480px) {
     .baner {
-      padding-top: 45%;
-      min-height: 65vh; } }
+      padding-top: 55%; } }
   .baner .baner_main {
     font-size: 6rem;
     text-transform: uppercase;
@@ -326,7 +308,7 @@ img {
       flex-direction: column; } }
   @media (max-width: 480px) {
     .millRow {
-      height: 65vh; } }
+      height: 80vh; } }
 
 .millBox {
   margin: 0; }
@@ -345,8 +327,8 @@ img {
       margin: 10px auto; } }
   @media (max-width: 480px) {
     .mill {
-      width: 150px;
-      height: 150px;
+      width: 225px;
+      height: 225px;
       margin: 0 auto; } }
 
 .millBase {
@@ -391,12 +373,16 @@ img {
       margin: 20px auto 0 auto; } }
   @media (max-width: 480px) {
     .meter {
-      margin: 10px auto 0 auto; } }
+      margin: 10px auto 0 auto;
+      width: 340px; } }
   .meter .units {
     font-size: 0.8rem;
     margin-left: 10px;
     font-weight: bold;
     background: #fff; }
+    @media (max-width: 480px) {
+      .meter .units {
+        font-size: 0.7rem; } }
   .meter .meterWraper {
     padding: 5px 10px;
     background: #333; }
