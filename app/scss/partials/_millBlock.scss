@@ -5,8 +5,12 @@
   height: 100vh;
   font-family: 'Lato', sans-serif;
   background: rgba(250,250,250,0.5);
-  @media(max-width: 768px){
+  overflow: hidden;
+  @media(max-width: 1024px){
     flex-direction: column;
+  }
+  @media(max-width: 480px){
+    height: 65vh;
   }
 }
 
@@ -23,12 +27,12 @@
     background-repeat: no-repeat;
     z-index: 200;
 
-    @media(max-width: 768px){
+    @media(max-width: 1024px){
       margin:10px auto;
     }
     @media(max-width: 480px){
-      width: 37vh;
-      height: 37vh;
+      width: 150px;
+      height: 150px;
       margin:0 auto;
     }
 
@@ -46,23 +50,17 @@
     @media(max-width: 1050px){
       background-position: 80% 90%;
     }
-    @media(max-width: 950px){
-      background-position: 85% 90%;
-    }
-    @media(max-width: 900px){
-      background-position: 90% 90%;
-    }
-    @media(max-width: 850px){
-      background-position: 95% 90%;
-    }
-    @media(max-width: 768px){
+    @media(max-width: 1024px){
       background: none;
+    }
+    @media(max-width: 480px){
+      padding: none;
     }
 }
 .metterBase{
   display: flex;
   flex-direction: column-reverse;
-  @media(max-width: 768px){
+  @media(max-width: 1024px){
     flex-direction: column;
   }
 }
@@ -71,15 +69,18 @@
     padding-top: 2%;
     }
     .meter{
-      width: 240px;
+      width: 360px;
       height: 72px;
       margin: 50px auto 0 auto;
       padding-top:10px;
       background:#fff;
       border: 2px solid #333;
       border-radius: 5px;
-      @media(max-width: 768px){
-        margin:25px auto 0 auto;
+      @media(max-width: 1024px){
+        margin:20px auto 0 auto;
+      }
+      @media(max-width: 480px){
+        margin:10px auto 0 auto;
       }
 
       .units{
@@ -100,7 +101,7 @@
   font-size: 1rem;
   text-align: left;
   font-family: 'Lato', sans-serif;
-  @media(max-width: 768px){
+  @media(max-width: 1024px){
     margin:50px auto 0 auto;
   }
 }

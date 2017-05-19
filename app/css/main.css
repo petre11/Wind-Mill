@@ -275,6 +275,13 @@ img {
   @media (max-width: 768px) {
     .baner {
       padding-top: 25%; } }
+  @media (max-width: 560px) {
+    .baner {
+      padding-top: 35%; } }
+  @media (max-width: 480px) {
+    .baner {
+      padding-top: 45%;
+      min-height: 65vh; } }
   .baner .baner_main {
     font-size: 6rem;
     text-transform: uppercase;
@@ -312,10 +319,14 @@ img {
   position: relative;
   height: 100vh;
   font-family: 'Lato', sans-serif;
-  background: rgba(250, 250, 250, 0.5); }
+  background: rgba(250, 250, 250, 0.5);
+  overflow: hidden; }
   @media (max-width: 1024px) {
     .millRow {
       flex-direction: column; } }
+  @media (max-width: 480px) {
+    .millRow {
+      height: 65vh; } }
 
 .millBox {
   margin: 0; }
@@ -377,7 +388,10 @@ img {
   border-radius: 5px; }
   @media (max-width: 1024px) {
     .meter {
-      margin: 50px auto 0 auto; } }
+      margin: 20px auto 0 auto; } }
+  @media (max-width: 480px) {
+    .meter {
+      margin: 10px auto 0 auto; } }
   .meter .units {
     font-size: 0.8rem;
     margin-left: 10px;

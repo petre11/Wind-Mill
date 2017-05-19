@@ -130,6 +130,13 @@ img{
   @media(max-width: 768px){
     padding-top: 25%;
   }
+  @media(max-width: 560px){
+    padding-top: 35%;
+  }
+  @media(max-width: 480px){
+    padding-top: 45%;
+    min-height: 65vh;
+  }
 
   .baner_main{
     font-size: 6rem;
