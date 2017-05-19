@@ -170,6 +170,23 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity; }
+  @media (max-width: 480px) {
+    video {
+      display: none; } }
+
+.background {
+  display: none; }
+  @media (max-width: 480px) {
+    .background {
+      min-width: 100%;
+      min-height: 100%;
+      display: block;
+      position: fixed;
+      background-image: url("../images/poster.png");
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
+      background-size: cover;
+      z-index: -100; } }
 
 img {
   max-width: 100%;
@@ -194,7 +211,7 @@ img {
   width: 250px;
   height: 100vh;
   background: #A3E923;
-  transition: left 0.35s ease-in;
+  transition: 0.35s ease-in;
   padding: 10vh 0 0;
   z-index: 100; }
   .mobileMenu ul {
@@ -212,7 +229,8 @@ img {
       color: #3EC3FD;
       padding: 4% 0 4% 3%;
       width: 100%;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 0.5s ease-in; }
       .mobileMenu li a:hover {
         background: #3EC3FD;
         color: #fff; }
