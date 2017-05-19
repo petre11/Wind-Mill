@@ -68,7 +68,7 @@
       </div>
       <div class="meter">
         <div class="meterWraper">
-          <span class="counter counter-analog" data-direction="up" data-format="9 9 9 9 9 9 9 9" data-stop="0 0 1 0 0 0 0 0">0</span>
+          <span class="counter counter-analog" data-direction="up" data-format="9 9 9 9 9 9 9 9" data-stop="0 0 1 0 0 0 0 0" data-interval="1000">0</span>
           <span class="units">kWh</span>
         </div>
       </div>
@@ -91,7 +91,7 @@
   </div>
 
   <script>
-    $('.counter').counter();
+    $('.counter').counter().counter('stop');
   </script>
 </body>
 
