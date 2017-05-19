@@ -1,4 +1,3 @@
-
 .counter-analog span.part {
     display: inline-block;
 }
@@ -15,9 +14,9 @@
 
 .counter-analog span.part span.digit {
     display: inline-block;
-    height: 20px;
+    height: 40px;
     line-height: 40px;
-    width: 13px;
+    width: 26px;
     vertical-align: middle;
     text-align: center;
     font: 0/0 a;
@@ -27,7 +26,7 @@
 }
 
 .counter-analog span.part span.digit {
-    background: transparent url("../images/jquery.counter-analog.png") 0 0 repeat-y;
+  background: transparent url("../images/jquery.counter-analog.png") 0 0 repeat-y;
 }
 
 .counter-analog span.part span.digit0 { background-position: 0     0; }
