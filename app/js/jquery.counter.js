@@ -4,7 +4,7 @@
  * Copyright (c) 2012 Sophilabs <hi@sophilabs.com>
  * MIT License
  */
- 
+
 !(function (context, definition) {
   if (typeof define == 'function' && typeof define.amd  == 'object') define(['jquery'], definition);
   else definition(context['$']);

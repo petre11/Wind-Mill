@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("DOM fully loaded and parsed");
 
+
+// mobile menu
   let mobileMenu = $('.mobileMenu')
   $(document).ready(function(){
   	$('.burgerMenu').click(function(){
@@ -9,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   	});
   });
 
+// mill rotation
   let btn = document.querySelector('#btn');
   let mill = document.querySelector('.mill');
-  console.log(mill);
   let audioContext = null;
   let meter = null;
   let rafID = null;
@@ -65,14 +67,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     rafID = window.requestAnimationFrame( drawLoop );
     if(meter.volume*1000 > 150){
       mill.setAttribute('style','transform: rotate('+ meter.volume*1000 +'deg)');
+      //Counter Start
+      $('.counter').counter('play');
     }
     else{
       mill.setAttribute('style','transform: rotate('+ 0 +'deg)');
+      //Counter Stop
+      $('.counter').counter('stop');
 
     }
       console.log(meter.volume*1000);
-      let counterSpeed = document.querySelector('.counter-analog');
-      counterSpeed.setAttribute('data-interval',1000)
   }
 
   //remove video bacground when device is mobile.
