@@ -82,7 +82,7 @@
   .col-md-12 {
     width: 100%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .col-lg-1 {
     width: 8.33333%; }
   .col-lg-2 {
@@ -313,7 +313,7 @@ img {
   height: 100vh;
   font-family: 'Lato', sans-serif;
   background: rgba(250, 250, 250, 0.5); }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .millRow {
       flex-direction: column; } }
 
@@ -329,13 +329,13 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 200; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .mill {
       margin: 10px auto; } }
   @media (max-width: 480px) {
     .mill {
-      width: 37vh;
-      height: 37vh;
+      width: 150px;
+      height: 150px;
       margin: 0 auto; } }
 
 .millBase {
@@ -349,23 +349,17 @@ img {
   @media (max-width: 1050px) {
     .millBase {
       background-position: 80% 90%; } }
-  @media (max-width: 950px) {
-    .millBase {
-      background-position: 85% 90%; } }
-  @media (max-width: 900px) {
-    .millBase {
-      background-position: 90% 90%; } }
-  @media (max-width: 850px) {
-    .millBase {
-      background-position: 95% 90%; } }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .millBase {
       background: none; } }
+  @media (max-width: 480px) {
+    .millBase {
+      padding: none; } }
 
 .metterBase {
   display: flex;
   flex-direction: column-reverse; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .metterBase {
       flex-direction: column; } }
 
@@ -381,7 +375,7 @@ img {
   background: #fff;
   border: 2px solid #333;
   border-radius: 5px; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .meter {
       margin: 25px auto 0 auto; } }
   .meter .units {
@@ -399,7 +393,7 @@ img {
   font-size: 1rem;
   text-align: left;
   font-family: 'Lato', sans-serif; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .millInfo {
       margin: 50px auto 0 auto; } }
 
