@@ -79,13 +79,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log(meter.volume*1000);
   }
 
-  //remove video bacground when device is mobile.
-  let vid = $('#bgVideo');
-  let poster = $('#poster');
-
-  if (window.matchMedia('(prefers-reduced-motion)').matches) {
-      vid.css('display','none');
-      poster.css('display','block');
-  }
-
   });
