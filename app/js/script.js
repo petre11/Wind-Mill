@@ -63,10 +63,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // kick off the visual updating
     drawLoop();
   }
+  let rotate = 0;
   let drawLoop = () =>{
     rafID = window.requestAnimationFrame( drawLoop );
-    if(meter.volume*1000 > 150){
-      mill.setAttribute('style','transform: rotate('+ meter.volume*1000 +'deg)');
+    if(meter.volume*1000 > 50){
+      rotate = rotate + meter.volume*300;
+      mill.setAttribute('style','transform: rotate('+rotate+'deg);');
       //Counter Start
       $('.counter').counter('play');
     }
