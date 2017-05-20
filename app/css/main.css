@@ -350,7 +350,8 @@ img {
       margin: 0 auto; } }
 
 .millBase {
-  background-image: url("../images/turbine.png");
+    background:none;
+/*   background-image: url("../images/turbine.png"); */
   background-size: auto;
   background-position: 68% 90%;
   background-repeat: no-repeat; }
